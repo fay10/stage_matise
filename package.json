@@ -1,0 +1,14 @@
+{
+  "name": "matise",
+  "version": "1.0.0",
+  "description": "stage opdracht matise",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Fay Schouten",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
