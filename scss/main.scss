@@ -1,6 +1,165 @@
-$primary-color: #444;
+$primary-color: #4a90e2;
+$secondary-color: #b8e986;
+$third-color: #f5a623;
+$break-small: 1200px;
 
-body {
-  background: $primary-color;
-  color: #fff;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  padding: 60px 80px;
+}
+
+// header
+
+.headerimg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text {
+  width: 62vw;
+  height: 246px;
+  position: absolute;
+  bottom: 72px;
+  background-color: white;
+  padding: 40px;
+  line-height: 100px;
+}
+
+// main blokjes
+
+.span-4,
+.grid-item {
+  float: left;
+}
+
+.card {
+  border: none !important;
+}
+
+.container-fluid {
+  margin-top: 56px !important;
+}
+
+#blauw {
+  height: 266px;
+  background-color: $primary-color;
+}
+
+#groen {
+  height: 266px;
+  background-color: $secondary-color;
+}
+
+.blauwtwee {
+  background-color: $third-color !important;
+  height: 266px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 20px !important;
+}
+
+h4 {
+  font-size: 60px !important;
+}
+
+// main tekst
+
+.tekstblok {
+  width: 250px;
+}
+
+.tekstblok.twee {
+  width: 500px;
+}
+
+.tekstblok.drie {
+  width: 320px;
+}
+
+footer {
+  background-color: black;
+  height: 392px;
+  font-size: 60px;
+}
+
+.footer-text {
+  text-align: center;
+  line-height: 350px;
+}
+
+@media screen and (max-width: $break-small) {
+  #container {
+    padding: 0;
+  }
+
+  .card-body {
+    padding: 0px;
+  }
+
+  .headerimg {
+    height: 667px;
+    object-fit: cover;
+  }
+
+  .text {
+    background-color: black;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    color: white;
+    height: 120px;
+    padding: 0px;
+    line-height: 15px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 32px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+    margin-top: 30px;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  footer {
+    height: 90px !important;
+    margin-top: 30px;
+  }
+
+  .footer-text {
+    font-size: 24px;
+    line-height: 75px;
+  }
+
+  .tekstblok {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .tekstblok.twee {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .tekstblok.drie {
+    font-size: 16px;
+    width: 100%;
+  }
 }
