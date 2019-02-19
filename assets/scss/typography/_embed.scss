@@ -1,0 +1,31 @@
+$font-primary: (
+    font-family: (
+        Inter,
+        sans-serif
+    ),
+    load: true,
+    weights: (
+        'Regular': 400,
+        'Medium': 500,
+        'Bold': 600,
+    ),
+    weight-classes: false,
+    path: '~assets/fonts',
+    files: (
+        'woff2',
+        'woff',
+        'ttf'
+    ),
+    use: (
+        'h1',
+        'h3',
+        'h4',
+        'p',
+        'span.text',
+        '#section'
+    ),
+    types: (
+        'normal',
+        'italic'
+    )
+);
